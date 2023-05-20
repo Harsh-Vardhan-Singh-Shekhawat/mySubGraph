@@ -1,0 +1,12 @@
+type Transfer @entity(immutable: true) {
+  id: Bytes!
+  from: Bytes! # address
+  receiver: Bytes! # address
+  amount: BigInt! # uint256
+  message: String! # string
+  timestamp: BigInt! # uint256
+  keyword: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
